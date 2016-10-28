@@ -1,7 +1,19 @@
+
+#main {
+    .emission {
+        padding-left: 96px;
+        .emission-content {
+            padding: 0 48px;
+        }
+    }
+}
 .emission {
     color: $text-color;
     font-size: $font-size-base;
     font-family: $font-family-base;
+    h1 {
+        font-size: 60px;
+    }
     h1,h2,h3,h4,h5,h6 {
         color:  $text-heading;
         font-family: $headings-font-family;
@@ -23,13 +35,17 @@
         margin: 20px 0 60px;
     }
 
-}
-
 //hero
-.hero {
+.hero-area {
     min-height: 325px;
     position:relative;
-    margin: 0 0 56px;
+    margin: 0 -48px 56px;
+    padding:0;
+    background: none;
+    text-align: left;
+    .hero-content {
+        padding: 0 48px;
+    }
     .hero-img-bg {
             background-size:cover;
             background-position:center;
@@ -47,30 +63,30 @@
         width:auto;
         h1 {
             margin: 0;
-        }
     }
+}
 
 }
 
 .article-list {
     .row {
         margin-bottom: 40px;
-    }
-   p{
-       margin: 0 0 30px;
-   }
+}
+    p{
+        margin: 0 0 30px;
+}
 }
 
 .panel-group {
     & > .panel:last-child > .panel-heading{
         border-bottom: 1px solid $panel-default-border;
-    }
+}
     .panel + .panel {
         margin-top: 0;
-    }
+}
     .list-update-post {
         margin-top:15px;
-    }
+}
     .panel-default {
         border: none;
         box-shadow: none;
@@ -78,33 +94,33 @@
 
         .panel-heading {
             padding:$panel-heading-padding;
-        }
+    }
         .panel-body {
             padding: 0;
             border: none!important;
             .panel-default {
                 margin-left: 52px;
-            }
-            p {
-                 margin-bottom: 15px;
-            }
-
         }
+            p {
+                margin: 0 0 15px;
+        }
+
+    }
 
         .embed-responsive {
             margin: 0;
-        }
-            form {
-                background: $brand-second;
-                padding: 27px 50px;
-                input {
-                    margin: 0 5px 0 0;
-                    min-width: 308px;
-            }
-                .btn {
-                    min-width: 198px;
-            }
-        }
+    }
+        form {
+            background: $brand-second;
+            padding: 27px 50px;
+            input {
+                margin: 0 5px 0 0;
+                min-width: 308px;
+    }
+        .btn {
+            min-width: 198px;
+    }
+    }
 
 
         & > .panel-heading {
@@ -122,19 +138,22 @@
                     text-decoration: none;
                     outline: none;
                     outline-offset: 0;
-            }
         }
-            .glyphicon {
-                color: $brand-primary;
-                font-size: 14px;
-                margin-right: 20px;
-            }
-            .collapsed {
-                .glyphicon-chevron-down:before {
-                    content: '\e080'
-            }
-        }
+    }
+        .glyphicon {
+            color: $brand-primary;
+            font-size: 14px;
+            margin-right: 20px;
+    }
+        .collapsed {
+            .glyphicon-chevron-down:before {
+                content: '\e080'
     }
     }
 }
+}
+}
 
+
+
+}

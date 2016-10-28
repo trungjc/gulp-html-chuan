@@ -26,7 +26,13 @@
     font-style: normal;
 }
 
+
+a {
+    text-decoration: none;
+    color: $link-color;
+}
 // overwrite form-control (input field)
+.emission {
 
 .form-control {
     @include box-shadow(none);
@@ -45,7 +51,7 @@
         color: #fff;
         background: #0068aa;
         border-color:  #0068aa;
-    }
+}
 }
 
 .btn-primary {
@@ -54,5 +60,7 @@
     &:hover {
         background: #0068aa;
         border-color:  #0068aa;
-    }
+}
+}
+
 }

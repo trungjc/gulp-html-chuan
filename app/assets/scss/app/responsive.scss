@@ -2,6 +2,7 @@
 
 //  768 to 1024
 @include sm {
+    img {max-width:100%}
     .emission {
         font-size: 15px;
         h1{
@@ -19,6 +20,9 @@
         h5{
             font-size: 16px;
         }
+       .panel-group .panel-default form input {
+    min-width: 260px;
+}
 
     }
 
@@ -26,18 +30,11 @@
 
 // 768 screen
 @include xs{
-    .hero {
-        margin-bottom: 40px;
-    }
-    .article-list .row {
-        margin-bottom: 0;
-    }
-    .hero-img-bg {
-        min-height: 325px;
-    }
-    img {
-        max-width: 100%;
-    }
+#main {
+    .emission {
+        padding-left: 0px;
+}
+}
     .emission {
         font-size: 15px;
         .embed-responsive {
@@ -58,24 +55,37 @@
         h5{
                 font-size: 16px;
         }
-
-    }
-    .panel-group .panel-default {
+        .hero {
+                margin-bottom: 40px;
+        }
+            .article-list .row {
+                margin-bottom: 0;
+        }
+            .hero-img-bg {
+                min-height: 325px;
+        }
+            img {
+                max-width: 100%;
+        }
+        .panel-group .panel-default {
         .panel-body .panel-default{
             margin-left: 35px;
-        }
+    }
         & > .panel-heading .glyphicon {
             margin-right: 5px;
-        }
     }
+}
     .panel-group .panel-default form {
         padding: 20px;
         input,.btn {
             width:100%;
             marging:0;
             min-width: auto;
-        }
     }
+}
+
+    }
+
 
 }
 

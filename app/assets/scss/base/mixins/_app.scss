@@ -49,3 +49,9 @@
     @content;
   }
 }
+
+@mixin desktop {
+    @media screen and (min-width: #{$md-width}) {
+    @content;
+}
+}
